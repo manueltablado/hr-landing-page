@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Burger Menu</title>
+    <link rel="stylesheet" href="./style/css/header.css" />
+    <link rel="stylesheet" href="./style/css/home.css" />
+    <script src="./style/js/script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+    />
+
+    <!-- Hamburger Menu -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <!-- Hamburger Menu -->
+    <section class="top-nav">
+      <input id="menu-toggle" type="checkbox" />
+      <div id="icon_container_mobile">
+        <li id="icon-brand">
+          <a href="#"><img src="./imgs/icon-brand.png" alt="Brand logo" /></a>
+        </li>
+      </div>
+      <label class="menu-button-container" for="menu-toggle">
+        <div class="menu-button"></div>
+      </label>
+      <ul class="menu">
+        <li>About Us</li>
+        <li>Book Online</li>
+        <li>Weight Loss Programs</li>
+        <li>Real Patient Stories</li>
+        <li>Locations</li>
+        <li>Blog</li>
+        <li>Shop</li>
+        <li>Subscription</li>
+      </ul>
+    </section>
+
+    <section class="general-container">
+      <div class="image-background-container">
+        <img class="image-background-timer" />
+      </div>
+
+      <div class="text-general-container">
+        <div class="cols col-offer">
+          <h2 class="col-offer-title desktop">
+            Chicago's <strong class="highlighted-word">Free</strong
+            ><br />Medical Check-Up<br />and Weight Loss<br />Consultation
+          </h2>
+          <h2 class="col-offer-title tablet">
+            Chicago's
+            <strong class="highlighted-word">Free</strong> Medical<br />
+            Check-Up and Weight<br />Loss Consultation
+          </h2>
+          <h2 class="col-offer-title mobile">
+            Chicago's <strong class="highlighted-word">Free</strong
+            ><br />Medical Check-Up and Weight Loss Consultation
+          </h2>
+          <p class="col-offer-text desktop">
+            Limited spots available due to the physicians schedule and the high
+            demand for service. No credit card or insurance required.
+          </p>
+          <div class="book-appointment-container desktop">
+            <button class="book-appointment">Book My Appointment</button>
+          </div>
+        </div>
+
+        <div class="warning-container">
+          <p class="warning-text">
+            Only <strong class="highlighted-word">11</strong> spots available!
+          </p>
+        </div>
+
+        <div class="cols col-timer">
+          <div id="countdown">
+            <h2 class="timer-title monserat">Your offer ends in:</h2>
+            <div class="timer-general-container" id="timer-container-time">
+              <div class="timer">
+                <span class="timer-span-name monserat">DAYS</span>
+                <div class="timer-container-span">
+                  <span id="days">00</span>
+                </div>
+              </div>
+              <div class="timer">
+                <span class="timer-span-name monserat">HOURS</span>
+                <div class="timer-container-span">
+                  <span id="hours">00</span>
+                </div>
+              </div>
+              <div class="timer">
+                <span class="timer-span-name monserat">MINUTES</span>
+                <div class="timer-container-span">
+                  <span id="minutes">00</span>
+                </div>
+              </div>
+              <div class="timer">
+                <span class="timer-span-name monserat">SECONDS</span>
+                <div class="timer-container-span">
+                  <span id="seconds">00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="offer-appointment-resp-container">
+          <p class="offer-appointment-resp col-offer-text resp">
+            There are limited spots due to the Physicians schedule and the high
+            demand for service. No credit card or insurance required.
+          </p>
+          <div class="offer-appointment-resp book-appointment-container resp">
+            <button class="book-appointment">Book My Appointment</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="questions-general-container">
+      <div class="questions-container">
+        <ul class="questions">
+          <li>
+            <a href="#">¿Por qué es gratis?</a>
+          </li>
+          <li>
+            <a href="#"
+              >¿Necesito esto si ya he tenido mi chequeo médico anual? ¿Cuál es
+              la diferencia?</a
+            >
+          </li>
+          <li>
+            <a href="#">¿Puedo traer a otra persona a la cita?</a>
+          </li>
+          <li>
+            <a href="#">¿Cuánto tiempo dura?</a>
+          </li>
+          <li>
+            <a href="#"
+              >¿Qué pasa si tengo que cancelar o si no estoy seguro de poder
+              ir?</a
+            >
+          </li>
+          <li>
+            <a href="#">¿Necesito traer algo conmigo?</a>
+          </li>
+          <li>
+            <a href="#">¿Qué pasa si no tengo seguro?</a>
+          </li>
+          <li>
+            <a href="#"
+              >¿Funcionan los programas de pérdida de peso que ofrecen?</a
+            >
+          </li>
+          <li>
+            <a href="#">¿Cuál es el truco?</a>
+          </li>
+          <li>
+            <a href="#"
+              >¿Tendré que agotarme en el gimnasio para que funcione?</a
+            >
+          </li>
+          <li>
+            <a href="#">¿Dónde están ubicados?</a>
+          </li>
+          <li>
+            <a href="#">Reservar cita</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </body>
+</html>

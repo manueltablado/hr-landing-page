@@ -1,0 +1,412 @@
+/* General Fonts Style */
+h2 {
+  font-family: "Libre Baskerville";
+  font-size: 45px;
+  line-height: 67.5px;
+}
+
+p {
+  font-family: "Montserrat";
+  font-size: 16px;
+  line-height: 25.6px;
+}
+
+li {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17.07px;
+}
+
+button {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19.5px;
+}
+
+h2.monserat {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28.51px;
+  text-align: center;
+}
+
+/* Background img */
+.general-container .image-background-timer {
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  top: 0;
+  width: 590px;
+  content: url("../../imgs/background-timer-desktop.png");
+}
+
+/* Text Content First Slide */
+.col-offer h2.col-offer-title.tablet,
+.col-offer h2.col-offer-title.mobile {
+  display: none;
+}
+
+.warning-container {
+  display: none;
+}
+
+.col-offer h2.col-offer-title.desktop {
+  display: block;
+}
+
+.offer-appointment-resp-container {
+  display: none;
+}
+
+.text-general-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.text-general-container .col-offer {
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 25%;
+  margin-right: 15px;
+}
+
+.text-general-container .col-offer h2 {
+  font-family: "Libre Baskerville";
+  font-weight: 400;
+}
+
+.text-general-container .col-offer h2 .highlighted-word {
+  color: #dd71c6;
+  font-family: "Libre Baskerville";
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 67.5px;
+}
+
+.text-general-container .col-offer-text {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.text-general-container .col-offer a:hover {
+  text-decoration: underline;
+}
+
+/* Button Efect */
+.book-appointment {
+  width: 215px;
+  height: 40px;
+  padding-top: 15px;
+  padding-bottom: 30px;
+  text-align: center;
+  color: #000;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: inline-block;
+  color: #fff;
+  border: 3px solid #dd71c6;
+  background-image: -webkit-linear-gradient(
+    30deg,
+    #dd71c6 50%,
+    transparent 50%
+  );
+  background-image: linear-gradient(30deg, #dd71c6 50%, transparent 50%);
+  background-size: 525px;
+  background-repeat: no-repeat;
+  background-position: 0%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+  text-transform: initial;
+}
+
+.book-appointment:hover {
+  background-position: 100%;
+  color: #dd71c6;
+}
+
+/* Timer */
+.col-timer {
+  margin-left: 15px;
+}
+
+#countdown {
+  display: grid;
+  justify-content: center;
+  font-size: 24px;
+  height: 321px;
+  width: 629px;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.49);
+  backdrop-filter: blur(20px);
+  padding: 10px;
+  position: relative;
+  align-content: center;
+  justify-items: center;
+}
+
+.timer-container {
+  display: flex;
+  justify-content: center;
+}
+
+.timer {
+  margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.4px;
+  position: relative;
+}
+
+.timer-container-span span {
+  width: 60px;
+  height: 89px;
+  margin-right: 4px;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 88.95px;
+  text-align: center;
+  color: #333333;
+}
+
+.timer-container-span {
+  top: 60px;
+  position: absolute;
+}
+
+#timer_text {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 40px;
+  color: black;
+}
+
+div#timer-container-time {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 150px;
+}
+
+.timer-title {
+  position: absolute;
+  top: 66px;
+  margin: 0;
+}
+
+.timer-span-name {
+  width: 127px;
+  height: 32px;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32.02px;
+  letter-spacing: 5px;
+  text-align: center;
+  color: #0083d3;
+}
+
+@media (max-width: 1250px) and (min-width: 1173px) {
+  .text-general-container {
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 1172px) {
+  .text-general-container {
+    display: grid;
+    align-items: unset;
+    justify-content: unset;
+  }
+
+  .text-general-container .col-offer {
+    width: unset;
+    margin: 0 0 0 35px;
+  }
+
+  .col-offer .col-offer-text.desktop,
+  .book-appointment-container.desktop {
+    display: none;
+  }
+
+  .warning-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 45px;
+  }
+
+  .warning-container .warning-text {
+    font-family: "Montserrat";
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(51, 51, 51, 1);
+    width: 100%;
+  }
+
+  .warning-container .warning-text .highlighted-word {
+    font-family: "Montserrat";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(221, 113, 198, 1);
+  }
+
+  .offer-appointment-resp-container {
+    display: grid;
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 1172px) and (min-width: 730px) {
+  /* Background img */
+  .general-container {
+    position: relative;
+  }
+  .general-container .image-background-timer {
+    height: 100%;
+    width: 430px;
+    content: url("../../imgs/background-timer-tablet.png");
+  }
+
+  /* Text Content First Slide */
+  .col-offer h2.col-offer-title.desktop,
+  .col-offer h2.col-offer-title.mobile {
+    display: none;
+  }
+
+  .col-offer h2.col-offer-title.tablet {
+    display: block;
+    margin-top: 0;
+    width: 75%;
+  }
+
+  .cols.col-timer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .offer-appointment-resp-container .offer-appointment-resp.col-offer-text {
+    width: 52%;
+    margin-left: 60px;
+  }
+
+  .offer-appointment-resp-container
+    .offer-appointment-resp.book-appointment-container {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0 50px 0;
+  }
+}
+
+@media (max-width: 729px) {
+  /* Background img */
+  .general-container .image-background-timer {
+    max-width: fit-content;
+    content: url("../../imgs/background-timer-mobile.png");
+  }
+
+  /* Text Content First Slide */
+  .col-offer h2.col-offer-title.desktop,
+  .col-offer h2.col-offer-title.tablet {
+    display: none;
+  }
+
+  .col-offer h2.col-offer-title.mobile {
+    display: block;
+  }
+
+  .text-general-container .col-offer {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  /* Timer */
+  #countdown {
+    height: 159px;
+    width: 281px;
+  }
+
+  .col-timer {
+    margin-left: unset;
+    display: flex;
+    justify-content: center;
+  }
+
+  .timer-title {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 19.01px;
+    text-align: center;
+    top: 34px;
+  }
+
+  .timer-span-name {
+    width: 30px;
+    height: 14px;
+    font-weight: 500;
+    font-size: 8px;
+    line-height: 14.23px;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+
+  .timer-container-span span {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32.02px;
+    text-align: center;
+  }
+
+  div#timer-container-time {
+    top: 82px;
+  }
+
+  .timer-container-span {
+    top: 35px;
+    margin-left: 8px;
+  }
+
+  .general-container .image-background-timer {
+    height: unset;
+  }
+
+  .col-offer-title.mobile,
+  .text-general-container .col-offer h2 .highlighted-word {
+    text-align: center;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 48px;
+    text-align: center;
+  }
+
+  .text-general-container {
+    justify-items: center;
+  }
+
+  .offer-appointment-resp-container {
+    display: grid;
+    justify-items: center;
+    width: 52%;
+  }
+
+  .offer-appointment-resp-container
+    .offer-appointment-resp.book-appointment-container {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0 50px 0;
+    justify-items: center;
+  }
+}
