@@ -426,6 +426,16 @@ h2.questions-title {
   .questions-general-container {
     background-image: none;
   }
+
+  .menu {
+    margin-top: 97px;
+  }
+
+  .questions-container .questions-list-container.active .container-answer {
+    height: 100px;
+    overflow-y: auto;
+    align-items: flex-start;
+  }
 }
 
 @media (max-width: 729px) {
@@ -540,6 +550,12 @@ h2.questions-title {
     background-size: cover;
     background-repeat: no-repeat;
   }
+
+  .questions-container .questions-list-container.active .container-answer {
+    height: 200px;
+    overflow-y: auto;
+    align-items: flex-start;
+  }
 }
 
 @media (max-width: 445px) {
@@ -551,5 +567,9 @@ h2.questions-title {
 @media (max-width: 375px) {
   .questions-general-container {
     margin-top: 65px;
+  }
+
+  .menu {
+    margin-top: 74px;
   }
 }
