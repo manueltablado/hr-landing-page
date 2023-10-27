@@ -294,7 +294,6 @@ h2.questions-title {
 
 .questions-container .questions-list-container.active .container-answer {
   height: 100px;
-  overflow: scroll;
 }
 
 .questions-container .questions-list-container .container-answer {
