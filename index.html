@@ -6,7 +6,9 @@
     <title>Responsive Burger Menu</title>
     <link rel="stylesheet" href="./style/css/header.css" />
     <link rel="stylesheet" href="./style/css/home.css" />
-    <script src="./style/js/script.js"></script>
+    <script src="./style/js/timer.js"></script>
+    <script src="./style/js/q&a.js"></script>
+    <script src="./style/js/header.js"></script>
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap"
@@ -33,16 +35,46 @@
         <div class="menu-button"></div>
       </label>
       <ul class="menu">
-        <li>About Us</li>
-        <li>Book Online</li>
-        <li>Weight Loss Programs</li>
-        <li>Real Patient Stories</li>
-        <li>Locations</li>
-        <li>Blog</li>
-        <li>Shop</li>
-        <li>Subscription</li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Book Online</a></li>
+        <li><a href="#">Weight Loss Programs</a></li>
+        <li><a href="#">Real Patient Stories</a></li>
+        <li><a href="#">Locations</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Subscription</a></li>
       </ul>
     </section>
+
+    <!-- <section>
+      <nav>
+        <div class="navbar">
+          <div class="container nav-container">
+              <input class="checkbox" type="checkbox" name="" id="" />
+              <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+              </div>  
+              <div id="icon_container_mobile logo">
+                <li id="icon-brand">
+                  <a href="#"><img src="./imgs/icon-brand.png" alt="Brand logo" /></a>
+                </li>
+              </div>
+            <div class="menu-items">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Book Online</a></li>
+              <li><a href="#">Weight Loss Programs</a></li>
+              <li><a href="#">Real Patient Stories</a></li>
+              <li><a href="#">Locations</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">Subscription</a></li>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </section> -->
 
     <section class="general-container">
       <div class="image-background-container">
@@ -125,54 +157,178 @@
 
     <section class="questions-general-container">
       <div class="questions-container">
-        <ul class="questions">
-          <li>
-            <a href="#">¿Por qué es gratis?</a>
-          </li>
-          <li>
-            <a href="#"
-              >¿Necesito esto si ya he tenido mi chequeo médico anual? ¿Cuál es
-              la diferencia?</a
-            >
-          </li>
-          <li>
-            <a href="#">¿Puedo traer a otra persona a la cita?</a>
-          </li>
-          <li>
-            <a href="#">¿Cuánto tiempo dura?</a>
-          </li>
-          <li>
-            <a href="#"
-              >¿Qué pasa si tengo que cancelar o si no estoy seguro de poder
-              ir?</a
-            >
-          </li>
-          <li>
-            <a href="#">¿Necesito traer algo conmigo?</a>
-          </li>
-          <li>
-            <a href="#">¿Qué pasa si no tengo seguro?</a>
-          </li>
-          <li>
-            <a href="#"
-              >¿Funcionan los programas de pérdida de peso que ofrecen?</a
-            >
-          </li>
-          <li>
-            <a href="#">¿Cuál es el truco?</a>
-          </li>
-          <li>
-            <a href="#"
-              >¿Tendré que agotarme en el gimnasio para que funcione?</a
-            >
-          </li>
-          <li>
-            <a href="#">¿Dónde están ubicados?</a>
-          </li>
-          <li>
-            <a href="#">Reservar cita</a>
-          </li>
-        </ul>
+        <h2 class="questions-title">Frequently Asked Questions</h2>
+        <div class="questions-list-container">
+          <div class="label">
+            Why is it free?<span
+              ><img
+                class="vector-answer"
+                src="./imgs/q&a-icon.png"
+                alt="icon q&a"
+            /></span>
+          </div>
+          <div class="container-answer">
+            We believe in making quality healthcare and wellness guidance
+            accessible to everyone. Our commitment to community health and
+            well-being drives us to offer free consultations. We're dedicated to
+            helping individuals lead healthier lives without financial barriers.
+          </div>
+        </div>
+        <div class="questions-list-container">
+          <div class="label">
+            Do I need this if I’ve had my yearly medical check? What is the
+            difference?<span
+              ><img
+                class="vector-answer"
+                src="./imgs/q&a-icon.png"
+                alt="icon q&a"
+            /></span>
+          </div>
+          <div class="container-answer">
+            While your annual medical check is essential, our consultations
+            provide a more comprehensive approach. We go beyond the routine
+            check-up, offering personalized guidance and wellness strategies
+            tailored to your unique health goals. Think of us as your partners
+            in long-term well-being, helping you make the most of your health
+            journey.
+          </div>
+        </div>
+        <div class="questions-list-container">
+          <div class="label">
+            Can I bring another person to the appointment?<span
+              ><img
+                class="vector-answer"
+                src="./imgs/q&a-icon.png"
+                alt="icon q&a"
+            /></span>
+          </div>
+          <div class="container-answer">
+            Absolutely! We encourage the participation of friends or family to
+            provide support and understanding during the consultation.
+          </div>
+        </div>
+        <div class="questions-list-container">
+          <div class="label">
+            How long does it take?<span
+              ><img
+                class="vector-answer"
+                src="./imgs/q&a-icon.png"
+                alt="icon q&a"
+            /></span>
+          </div>
+          <div class="container-answer">
+            Our consultations are designed to be thorough and informative. The
+            duration typically ranges from 30 minutes to 1 hour. We allocate the
+            necessary time to address your concerns, provide in-depth
+            information, and ensure that you leave with a clear understanding of
+            your health and wellness plan.
+          </div>
+        </div>
+        <div class="questions-list-container">
+          <div class="label">
+            What if I have to cancel or if I’m not sure I’ll be able to make
+            it?<span
+              ><img
+                class="vector-answer"
+                src="./imgs/q&a-icon.png"
+                alt="icon q&a"
+            /></span>
+          </div>
+          <div class="container-answer">
+            Life is unpredictable, and we understand that. If you need to cancel
+            or reschedule your appointment, please let us know as soon as
+            possible. We're here to accommodate your schedule and make sure you
+            receive the care and guidance you need, even in the face of
+            unexpected changes.
+          </div>
+        </div>
+        <div class="questions-list-container">
+          <div class="label">
+            Do I need to bring anything with me?<span
+              ><img
+                class="vector-answer"
+                src="./imgs/q&a-icon.png"
+                alt="icon q&a"
+            /></span>
+          </div>
+          <div class="container-answer">
+            Bring any relevant medical or health records you may have, but don't
+            worry if you don't have any.
+          </div>
+        </div>
+        <div class="questions-list-container">
+          <div class="label">
+            What if I don’t have insurance?<span
+              ><img
+                class="vector-answer"
+                src="./imgs/q&a-icon.png"
+                alt="icon q&a"
+            /></span>
+          </div>
+          <div class="container-answer">
+            Our consultations are free and open to everyone, regardless of
+            whether you have health insurance.
+          </div>
+        </div>
+        <div class="questions-list-container">
+          <div class="label">
+            Do the weight loss programs you offer work?<span
+              ><img
+                class="vector-answer"
+                src="./imgs/q&a-icon.png"
+                alt="icon q&a"
+            /></span>
+          </div>
+          <div class="container-answer">
+            Yes, our programs are designed to achieve effective results. We
+            tailor the plans to your goals and needs.
+          </div>
+        </div>
+        <div class="questions-list-container">
+          <div class="label">
+            What’s the catch?<span
+              ><img
+                class="vector-answer"
+                src="./imgs/q&a-icon.png"
+                alt="icon q&a"
+            /></span>
+          </div>
+          <div class="container-answer">
+            There is no catch. We offer guidance and services with a focus on
+            your well-being.
+          </div>
+        </div>
+        <div class="questions-list-container">
+          <div class="label">
+            Will I have to exhaust myself in the gym to make it work?<span
+              ><img
+                class="vector-answer"
+                src="./imgs/q&a-icon.png"
+                alt="icon q&a"
+            /></span>
+          </div>
+          <div class="container-answer">
+            You don't need to overexert yourself at the gym. We tailor training
+            programs to be effective and suitable for your fitness level.
+          </div>
+        </div>
+        <div class="questions-list-container">
+          <div class="label">
+            Where are you located?<span
+              ><img
+                class="vector-answer"
+                src="./imgs/q&a-icon.png"
+                alt="icon q&a"
+            /></span>
+          </div>
+          <div class="container-answer">
+            Our consultation is located in [location], but we also offer online
+            consultations for your convenience.
+          </div>
+        </div>
+      </div>
+      <div class="offer-appointment-resp book-appointment-container resp">
+        <button class="book-appointment">Book My Appointment</button>
       </div>
     </section>
   </body>

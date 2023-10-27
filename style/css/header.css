@@ -27,6 +27,11 @@
   overflow: hidden;
 }
 
+.menu li a {
+  text-decoration: unset;
+  color: black;
+}
+
 /* Menu button styles */
 .menu-button-container {
   display: none;
@@ -116,6 +121,7 @@
     height: 2.5em;
     padding: 0.5em;
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    margin: -1px 0;
   }
 
   .menu > li {
@@ -126,6 +132,18 @@
     width: 100%;
     color: rgb(0, 0, 0);
     background-color: #ffffff;
+  }
+}
+
+@media (max-width: 1172px) and (min-width: 729px) {
+  .top-nav {
+    padding: 0 51px;
+  }
+}
+
+@media (max-width: 729px) {
+  .general-container.header-menu-open {
+    position: relative;
   }
 }
 

@@ -40,10 +40,15 @@ h2.monserat {
   right: 0;
   top: 0;
   width: 590px;
+  height: 1029px;
   content: url("../../imgs/background-timer-desktop.png");
 }
 
 /* Text Content First Slide */
+.general-container {
+  height: 900px;
+}
+
 .col-offer h2.col-offer-title.tablet,
 .col-offer h2.col-offer-title.mobile {
   display: none;
@@ -214,6 +219,111 @@ div#timer-container-time {
   color: #0083d3;
 }
 
+/* Frequently Asked Questions */
+.questions-general-container {
+  margin-bottom: 100px;
+}
+
+.questions-general-container .questions-container {
+  padding: 0 5vw;
+  display: grid;
+  justify-items: start;
+  justify-content: center;
+}
+
+.questions-title {
+  font-family: "Libre Baskerville";
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 51.2px;
+}
+
+.questions-li-container h2 {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 27.6px;
+}
+
+h2.questions-title {
+  text-align: center;
+  color: rgba(51, 51, 51, 1);
+}
+
+.questions-container {
+  margin: auto;
+  margin-bottom: 100px;
+}
+
+.questions-container .questions-list-container {
+  margin-bottom: 10px;
+  width: 60vw;
+  padding: 10px;
+  background: rgba(249, 249, 249, 1);
+  border-radius: 5px;
+}
+
+.questions-container .label,
+.questions-container .container-answer {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 500;
+  color: rgba(51, 51, 51, 1);
+  cursor: pointer;
+}
+
+.questions-container .label span {
+  font-size: 22px;
+  color: rgba(51, 51, 51, 1);
+}
+
+.questions-container .label span img {
+  width: 23px;
+}
+
+.questions-container .container-answer {
+  height: 0;
+  padding: 0 10px;
+  line-height: 26px;
+  overflow: hidden;
+  transition: height 0.5s;
+}
+
+.questions-container .questions-list-container.active .container-answer {
+  height: 100px;
+  overflow: scroll;
+}
+
+.questions-container .questions-list-container .container-answer {
+  align-items: center;
+  margin-left: 40px;
+  display: flex;
+}
+
+.vector-answer {
+  transform-origin: center;
+  transition: transform 0.5s ease;
+}
+
+.rotated {
+  transform: rotate(180deg);
+  transition: transform 0.5s ease;
+}
+
+.offer-appointment-resp.book-appointment-container {
+  display: flex;
+  justify-content: center;
+}
+
+.questions-general-container {
+  background-image: url("../../imgs/q&a-desk-back.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 @media (max-width: 1250px) and (min-width: 1173px) {
   .text-general-container {
     justify-content: space-around;
@@ -221,6 +331,10 @@ div#timer-container-time {
 }
 
 @media (max-width: 1172px) {
+  .general-container {
+    height: 1115px;
+  }
+
   .text-general-container {
     display: grid;
     align-items: unset;
@@ -309,6 +423,9 @@ div#timer-container-time {
     justify-content: center;
     margin: 15px 0 50px 0;
   }
+  .questions-general-container {
+    background-image: none;
+  }
 }
 
 @media (max-width: 729px) {
@@ -319,6 +436,10 @@ div#timer-container-time {
   }
 
   /* Text Content First Slide */
+  .general-container {
+    height: 872px;
+  }
+
   .col-offer h2.col-offer-title.desktop,
   .col-offer h2.col-offer-title.tablet {
     display: none;
@@ -399,7 +520,7 @@ div#timer-container-time {
   .offer-appointment-resp-container {
     display: grid;
     justify-items: center;
-    width: 52%;
+    width: 80vw;
   }
 
   .offer-appointment-resp-container
@@ -408,5 +529,27 @@ div#timer-container-time {
     justify-content: center;
     margin: 15px 0 50px 0;
     justify-items: center;
+  }
+
+  .questions-container .questions-list-container {
+    width: 80vw;
+  }
+
+  .questions-general-container {
+    background-image: url("../../imgs/q&a-mob-back.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: 445px) {
+  .questions-general-container {
+    background-size: contain;
+  }
+}
+
+@media (max-width: 375px) {
+  .questions-general-container {
+    margin-top: 65px;
   }
 }
