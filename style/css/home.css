@@ -571,4 +571,9 @@ h2.questions-title {
   .menu {
     margin-top: 74px;
   }
+
+  .book-appointment {
+    width: 280px;
+    background-size: 745px;
+  }
 }
