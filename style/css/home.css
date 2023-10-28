@@ -576,5 +576,8 @@ h2.questions-title {
     /* width: 280px;
     background-size: 745px; */
     white-space: nowrap;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
   }
 }
