@@ -573,7 +573,8 @@ h2.questions-title {
   }
 
   .book-appointment {
-    width: 280px;
-    background-size: 745px;
+    /* width: 280px;
+    background-size: 745px; */
+    white-space: nowrap;
   }
 }
