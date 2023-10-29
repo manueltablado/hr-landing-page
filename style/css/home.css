@@ -571,13 +571,18 @@ h2.questions-title {
   .menu {
     margin-top: 74px;
   }
+}
 
+/*------------------------------------*\
+    $IPHONE
+\*------------------------------------*/
+@media screen and (max-device-width: 480px) {
   .book-appointment {
-    width: 280px;
-    background-size: 745px;
-    white-space: nowrap;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
+    width: 100%;
+    background-size: cover;
+  }
+  button {
+    font-size: 14px; /* Reducir el tamaño de la fuente */
+    line-height: 17px; /* Ajustar la altura de línea */
   }
 }
