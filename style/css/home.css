@@ -577,10 +577,25 @@ h2.questions-title {
     $IPHONE
 \*------------------------------------*/
 @media screen and (max-device-width: 480px) {
-  .book-appointment {
-    width: 100%;
-    background-size: cover;
+  .text-general-container .offer-appointment-resp.book-appointment-container {
+    width: 85%;
   }
+
+  .text-general-container .book-appointment {
+    width: 100%;
+    background-size: 700px;
+  }
+
+  .questions-general-container
+    .offer-appointment-resp.book-appointment-container {
+    width: 100%;
+  }
+
+  .questions-general-container .book-appointment {
+    width: 65%;
+    background-size: 700px;
+  }
+
   button {
     font-size: 14px; /* Reducir el tamaño de la fuente */
     line-height: 17px; /* Ajustar la altura de línea */
